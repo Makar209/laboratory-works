@@ -4,6 +4,9 @@ import psycopg2
 
 app = Flask(__name__)
 
-@app.route('/login/', methods = ['GET'])
-def index():
-    return render_template('login.html')
+@app.route("/")
+def hello():
+    return render_template('login.html') 
+
+if __name__ == "__main__":
+    app.run(debug=True ,port=8080,use_reloader=False) 
