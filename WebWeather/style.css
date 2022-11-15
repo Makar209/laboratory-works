@@ -1,0 +1,139 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  background: -webkit-linear-gradient(45deg, rgb(40,57,80) 10%, rgb(209,130,116), rgb(97,205,253), rgb(19,72,120), rgb(84,85,160));
+}
+#mainBlock {
+  margin-top: 50px;
+  width: 1000px;
+  height: 500px;
+  background: url('https://imgtest.mir24.tv/uploaded/images/crops/2022/February/870x489_903x0_detail_crop_20220225123615_d6ff9cb2_8f7a1da83fbd942465b2c13d3c6749c0d18701a854fdc6c261f1af840e3b5af7.jpg') no-repeat;
+  background-size: 100%;
+  border: 10px ridge #1CA411;
+  border-radius: 40px 0px 40px 0px;
+  box-shadow: -3px 3px 50px 5px #FFFFFF;
+}
+.main_header {
+  font-family: Snell Roundhand, cursive;
+  color: rgb(39, 39, 39);
+}
+.region {
+  font-family: 'Merriweather', serif;
+  margin-top: 5px;
+}
+.header {
+  text-align: center;
+  width: 100%;
+  height: 8%;
+}
+.main {
+  display: flex;
+  height: 20%;
+}
+.requestButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#requestButtonStyle{
+  margin: 20px;
+  font-family: 'Comfortaa';
+  font-size: 15px;
+  color: #ffffff !important;
+  border: rgb(19,72,120) 1px ridge;
+  border-radius: 5px;
+  padding: 15px 25px;
+  background: #0e57fe;
+  background: linear-gradient(to top, rgb(209,130,116), rgb(84,85,160));
+}
+#requestButtonStyle:hover {
+  background: linear-gradient(to top,  rgb(84,85,160), rgb(209,130,116));
+}
+.responseHeader{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.respoceBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top, rgb(84,85,160), rgb(19,72,120), rgb(97,205,253), rgb(209,130,116), rgb(40,57,80))
+}
+.responseLine {
+  margin: 5px;
+}
+.responseText {
+  font-size: 20px;
+  color: black;
+  margin: 20px;
+}
