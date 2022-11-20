@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="mainfront.js"></script>
+</head>
+<body>
+    <h1 style="margin: 30px;">Давайте зарегистрируемся!</h1>
+    <div style="margin: 30px;">
+        <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Введите ваше ФИО</label>
+              <input type="text" class="form-control" id="InputFull_name">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Введите ваш логин</label>
+                <input type="text" class="form-control" id="InputLogin">
+              </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Введите ваш пароль</label>
+              <input type="text" class="form-control" id="InputPassword">
+            </div>
+            <button onclick="registRequest()" type="submit" class="btn btn-primary">Зарегистрироваться!</button>          
+        </form>        
+      </div>
+      <div style="margin: 30px;">
+        <h2>Что-то вспомнили? Может тогда?..</h2>
+        <button onclick="goToHome()" type="submit" class="btn btn-primary">Вернуться на страницу входа!</button> 
+      </div> 
+</body>
+</html>
