@@ -15,13 +15,6 @@ class Controller {
         //console.log(user);
         res.json(user.rows[0]);
     }
-    async updateUser(req, res) {
-
-    }
-    async deleteUser(req, res) {
-
-    }
-
 }
 
 module.exports = new Controller;

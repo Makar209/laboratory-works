@@ -26,11 +26,15 @@ async function registRequest() {
       body: JSON.stringify(user)
     });
     console.log(response.json())
+    if (confirm("Вы успешно зарегистрировались на сайте! Перейти на страницу с авторизацией?")) {
+      goToHome();
+    }
   } else {
     alert('Поле не заполнено!!');
   }
 
 }
+
 let objUser;
 async function loginInRequest() {
   let log = document.getElementById("InputLogin1").value;
